@@ -1,0 +1,103 @@
+/*gallery*/
+.gallery {
+    width: 95%;
+    height: 100vh;
+}
+
+.gallery-head {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.gallery-head h1 {
+    font-size: 3rem;
+    font-family: serif;
+    font-weight: 500;
+    color: #e75b1e;
+}
+
+.gallery-head p {
+    font-size: 1.5rem;
+}
+
+.grid {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: "one one two"
+        "three four five"
+        "six seven seven";
+    grid-gap: 10px;
+
+}
+
+.one {
+    grid-area: one;
+    width: 100%;
+}
+
+.two {
+    grid-area: two;
+    width: 100%;
+}
+
+.three {
+    grid-area: three;
+    width: 100%;
+}
+
+.four {
+    grid-area: four;
+    width: 100%;
+}
+
+.five {
+    grid-area: five;
+    width: 100%;
+}
+
+.six {
+    grid-area: six;
+    width: 100%;
+}
+
+.seven {
+    grid-area: seven;
+    width: 100%;
+}
+
+.one img,
+.two img,
+.three img,
+.four img,
+.five img,
+.six img,
+.seven img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.button {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.button a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background: #e75b1e;
+}
+
+.button a:hover {
+    background: transparent;
+    border: 2px solid #e75b1e;
+    color: #e75b1e;
+    transition: 1s;
+}

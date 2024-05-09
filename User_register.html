@@ -4,45 +4,29 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="styles.css/styles.css">
+	<link rel="stylesheet" href="styles.css/Register.css">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="clearfix">
-			<div class="logo">
-				<img src="image/logo.png" width="350px" height="180px">
-
-			</div>
-
-		</header>
-
-
 		<div class="navbar">
+
+			<div class="logo">
+				<img src="image/logo2.png" width="190px" height="50px"></a>
+			</div>
 
 			<a href="index.html">Home</a>
 			<a href="photographers.html">photographers</a>
-			<div class="dropdown">
-				<button class="dropbutton">Photoshoot
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropContent">
-					<a href="weddingday.html">Wedding Photoshoot</a>
-					<a href="preshoot.html">Preshoot</a>
-					<a href="femalemodelphotoshoot.html">Female Model photoshoot</a>
-					<a href="malemodelphotoshoot.html">Male Model photoshoot</a>
 
-				</div>
-
-			</div>
 			<a href="Gallery.html">Gallery</a>
 			<a href="AboutUs.html">About Us</a>
 			<a href="ContactUs.html">Contact Us</a>
 			<div class="login">
-				<a href="login1.html">Login</a>
 
-				<div class="log">
-					<a href="login1.html"><img src="image/log.png" width="50px" height="50px"></a>
-				</div><!--login img-->
+				<a href="login1.html">Login</a>
+				<a href="User_register.html">Register</a>
+
+
 			</div>
 		</div>
 
@@ -81,40 +65,7 @@
 
 					</form>
 				</td>
-				<td>
-					<!--form 2-->
-					<form id="myformv" action="php/vendor_register.php" target="" method="post"
-						onsubmit="return CheckPassword()">
 
-						<h2 class="vendor">Vendor</h2><br><br>
-						<!--fullname-->
-						<input type="text" name="fullname" placeholder="Full Name" required><br><br>
-						<!--email-->
-						<input type="email" name="vemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-							placeholder="E-mail" required><br><br>
-						<!--make a list-->
-						<select name="categories" required>
-
-							<option value="Admin">Admin</option>
-							<option value="photo">Photography</option>
-							<option value="entertainers">Entertainments</option>
-							<option value="Venues">Venues</option>
-						</select><br></br>
-						<!--password-->
-						<input type="password" id="pwd2" name="pwdv" placeholder="Password"
-							pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]){5,8} " required><br><br>
-						<!--confirm password-->
-						<input type="Password" id="rpwd2" placeholder="Confirm Password" required><br><br>
-						<input type="checkbox" id="checkV" onclick="enableButton2()">
-						<lable class="lable2">Accept Privacy Policy terms</lable><br><br>
-						<!--sign up-->
-
-						<input type="submit" id="btnsignup2" name="registerv" value="Sign Up" disabled>
-						<input type="reset" id="btncancel2" onclick="myFunction()" value="Cancel">
-
-					</form>
-
-				</td>
 			</tr>
 
 
@@ -124,61 +75,43 @@
 		<footer class="clearfix">
 			<div class="footer-colom">
 
-				<h3>Information</h3>
-				<div class="tweet">
-					<ul>
-						<li><a href="AboutUs.html">About Us</a></li>
-						<li><a href="ContactUs.html">Contact Us</a></li>
-						<li><a href="photographers.html"> photographers</a></li>
+				<h3 class="footer-title">INFORMATION</h3>
+				<ul class="footer-list">
+					<li>About Us</a></li>
+					<li>Latest Update photoshoots</a></li>
+					<li>Event</a></li>
 
-					</ul>
-				</div><!-- tweet -->
+				</ul><!-- tweet -->
+				<br>
+			</div><!-- footer-colom -->
+
+
+
+
+			<div class="footer-colom">
+				<h3 class="footer-title">OUR SERVICES</h3>
+				<ul class="footer-list">
+					<li>Model Bank</a></li>
+					<li>Term and Conditions</a></li>
+					<li>Privacy Policy</a></li>
+
+				</ul><!-- tweet-contact -->
 
 			</div><!-- footer-colom -->
 
 
-			<div class="footer-colom">
-				<h3>Our Contact</h3>
-				<div class="tweet-contact">
-					<p>LK MODEL ZONE</p>
-				</div><!-- tweet-contact -->
-				<div class="tweet-contact">
-					<p>TelePhone: 076 760 1577</p>
-					<p>e-Mail : modelsend@gmail.com</p>
-					<p>Facebook : www.facebook.com/lkmodelzone</p>
-					<p>Twitter : www.twitter.com/lkmodelzone</p>
-				</div><!-- tweet-contact -->
-
-			</div><!-- footer-colom -->
 
 			<div class="footer-colom">
-				<h3>Follow Us</h3>
-				<div class="tweet-follow">
-				</div><!-- tweet-follow us-->
+				<h3 class="footer-title">LEGAL</h3>
 
-				<div class="footer-colom">
+				<ul class="footer-list">
+					<li>FAQ</a></li>
+					<li>Term and Conditions</a></li>
+					<li>Privacy Policy</a></li>
 
-					<div class="socialmedia">
-						<ul>
-
-							<li><a href="www.facebook.com/lkmodelzone"><img src="image/fb.png"></a></li>
-							<li><a href="www.twitter.com/lkmodelzone"><img src="image/tw.png"></a></li>
-							<li><a href="#"><img src="image/in.png"></a></li>
-							<li><a href="#"><img src="image/yt.png"></a></li><br>
-							<li><a href="#"><img src="image/pin.png"></a></li>
-							<li><a href="#"><img src="image/wa.png"></a></li>
-							<li><a href="#"><img src="image/insta.png"></a></li>
-							<li><a href="#"><img src="image/snap.png"></a></li>
-
-						</ul>
-					</div><!--socialmedeia-->
-				</div><!-- tweet -->
-
-
-
+				</ul>
 			</div><!-- footer-colom -->
 		</footer>
-
 
 
 		<div class="copyright clearfix">

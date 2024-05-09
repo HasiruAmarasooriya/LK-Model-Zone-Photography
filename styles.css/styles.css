@@ -27,22 +27,18 @@ body {
   overflow: auto;
 }
 
-header {
-  background: linear-gradient(to right, #d4bfbf, #000000);
-  height: 190px;
-}
 
-header .logo {
-  display: block;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.logo {
+
+  margin-top: 2px;
+  float: left;
+  margin-left: 10px;
+
 }
 
 
 .navbar {
-  background: linear-gradient(to right, #000000, #d8cbcb);
+  background: linear-gradient(to right, #176482, #005f85);
   position: sticky;
   top: 0;
   height: 60px;
@@ -115,7 +111,7 @@ header .logo {
 
 .login a {
   float: right;
-  color: #000000;
+  color: #ffffff;
 }
 
 .log {
@@ -127,12 +123,65 @@ header .logo {
 }
 
 footer {
-  background: linear-gradient(to right, #000000, #dcd6d6);
+  background: linear-gradient(to right,#176482, #005f85 );
   margin-top: 0px;
   margin-bottom: 0px;
   width: 100%;
   display: flex;
 }
+
+.footer-title{
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  font-weight: 100;
+}
+
+.footer-list, 
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    text-transform: none;
+}
+
+.footer-link,
+.footer-list{
+    color: rgb(252, 248, 248);
+   
+}
+
+.number{
+  color: var(--cream-clr);
+}
+
+.footer-link:hover{
+  color: var(--white-clr);
+}
+.footer-copy{
+  display: block;
+  margin: 3.5rem 0 1rem 0;
+  text-align: center;
+  font-size: var(--small-fs);
+  color: black;
+  padding: 2rem 2rem 0;
+  border-top: 0.5px solid;
+  border-image: linear-gradient(to right, transparent, #fff, transparent) 1;
+}
+.footer-content a{
+  text-decoration: none;
+}
+
+.footer-container{
+display: flex;
+
+}
+
+.footer-content{
+    justify-content: space-between;
+    padding-right: 130px;
+}
+
 
 footer .footer-colom {
   flex-basis: 0;
@@ -209,7 +258,7 @@ footer .tweet-contact p {
 }
 
 .copyright {
-  background: linear-gradient(to right, #ffffff, #000000);
+  background: linear-gradient(to right,#139bb0, #1f1d1d );
   padding-bottom: 20px;
 }
 
@@ -319,6 +368,9 @@ img {
 }
 
 
+
+
+
 /*Our Service*/
 
 .head-intro h1 {
@@ -333,7 +385,7 @@ img {
 .introduction-container {
   width: 100%;
   display: flex;
-  background: linear-gradient(to right, #7e7e7ecc, #000000c5);
+  background: linear-gradient(to right, #06b7ed,#011c5e );
 }
 
 .intro-colom {
@@ -376,7 +428,7 @@ img {
 .team {
   width: 100%;
   height: 120vh;
-  background: url("../image/slide3.jpg");
+  background: url("../image/gallery1.jpg");
   background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
@@ -393,7 +445,7 @@ img {
 
 .head-title h1 {
   font-size: 3.5rem;
-  color: #e07e1dc3;
+  color: #fa7e03c3;
   font-family: sans-serif;
   font-weight: 600;
 }
@@ -492,141 +544,3 @@ i:hover {
 
 
 
-/*Register*/
-
-input[type="submit"] {
-  background-color: black;
-  color: white;
-  padding: 1px;
-  margin-left: 75px;
-}
-
-.lable1 {
-  font-family: sans-serif;
-  font-size: 15px;
-  margin-right: 200px;
-  color: black;
-  font-weight: bold;
-
-}
-
-.lable2 {
-  font-family: sans-serif;
-  font-size: 15px;
-  margin-right: 40px;
-  color: black;
-  font-weight: bold;
-
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-
-  margin-left: 150px;
-  width: 50%;
-}
-
-select {
-  margin-left: 150px;
-  width: 50%;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../image/cc.jpg");
-}
-
-#myformc {
-
-  margin: 10px 400px 10px 100px;
-  border: 2px solid black;
-  padding-bottom: 10px;
-}
-
-
-
-#myformv {
-  margin-right: -170px;
-  margin-left: -400px;
-  border: 2px solid black;
-  padding-bottom: 10px;
-}
-
-
-.customer {
-  font-family: sans-serif;
-  font-size: 25px;
-
-  color: black;
-  text-align: center;
-}
-
-.vendor {
-  font-family: sans-serif;
-  font-size: 25px;
-
-  color: black;
-  text-align: center;
-}
-
-#checkC {
-  margin-left: 150px;
-}
-
-#checkV {
-  margin-left: 150px;
-}
-
-#btnsignup1 {
-  background-color: #20B2AA;
-  color: white;
-  padding: 5px 10px 5px 10px;
-  margin-left: 200px;
-
-}
-
-#btnsignup2 {
-  background-color: #20B2AA;
-  color: white;
-  padding: 5px 10px 5px 10px;
-  margin-left: 200px;
-
-}
-
-#btncancel1 {
-  background-color: red;
-  color: white;
-  padding: 5px 10px 5px 10px;
-  margin-left: 20px;
-
-}
-
-#btncancel2 {
-  background-color: red;
-  color: white;
-  padding: 5px 10px 5px 10px;
-  margin-left: 20px;
-
-}
-
-.buttons:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-td.col1 {
-  text-align: left;
-  width: 700px;
-}
-
-td.col2 {
-  text-align: right;
-  width: 1000px;
-}
-
-h2 {
-  text-align: center;
-  color: #20B2AA;
-}
